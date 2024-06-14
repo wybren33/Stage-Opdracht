@@ -1,0 +1,186 @@
+/* FONT */
+:root{
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* COLORS */
+:root{
+    --clr-primary: #FF6969;
+    --clr-secondary: #0C1844;
+    --clr-base: #FFF5E1;
+}
+
+/* RESET */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video{
+    display: block;
+    max-width: 100%;
+}
+
+/* RESET END */
+
+/* FONT */
+:root{
+    --fs-1: 1rem;
+    --fs-2: 1.333rem;
+    --fs-3: 1.777rem;
+    --fs-4: 2.369rem;
+    --fs-5: 3.157rem;
+    --fs-small: 0.75rem;
+}
+  
+@media (min-width: 960px){
+    :root{
+        --fs-1: 1rem;
+        --fs-2: 1.618rem;
+        --fs-3: 2.618rem;
+        --fs-4: 4.236rem;
+        --fs-5: 6.854rem;
+        --fs-small: 0.618rem;
+    }
+}
+  
+body{
+    font-size: var(--fs-1);
+}
+h1{
+    font-size: var(--fs-4);
+} 
+h2{
+    font-size: var(--fs-3);
+}
+h3{
+    font-size: var(--fs-2);
+}
+
+body{
+    font-family: var(--system-ui);
+    background-color: var(--clr-base);
+}
+
+.container{
+    width: min(1400px, 100% - 2rem);
+    margin-inline: auto;
+}
+
+main > *{
+    margin-block: 3rem;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    nav{
+        flex: 1;
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: var(--clr-primary);
+        border: 2px solid white;
+        border-radius: 1rem;
+        @media screen and (max-width: 45rem) {
+            flex-wrap: wrap;
+        }
+        a{
+            color: var(--clr-base);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            &:first-child{
+                margin-left: 1rem;
+            }
+            &:hover{
+                color: color-mix(in oklab, var(--clr-primary), black 30%);
+            }
+        }
+    }
+}
+
+/* SMAKEN */
+#smaken{
+    background-color: var(--clr-primary);
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 1rem;
+    .grid{
+
+    }
+    .smaak{
+        background-color: #FFF5E1;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+/* BANNERS */
+#banners{
+    .wrapper{
+        img{
+            border-radius: 1rem;
+        }
+    }
+}
+
+/* CONTACT */
+#contact{
+    background-color: var(--clr-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+    .wrapper{
+        display: grid;
+        grid-template-columns: 75% auto;
+        gap: 2rem;
+    }
+}
+
+/* FOOTER */
+footer{
+    background-color: #0C1844;
+    margin-block: 1rem;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/* BACK TO TOP */
+.back-to-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-secondary);
+    font-size: 2rem;
+    border-radius: 100vw;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    height: 3rem;
+    width: 3rem;
+    &:hover{
+        background-color: color-mix(in oklab, var(--clr-secondary), white 10%);
+    }
+}
