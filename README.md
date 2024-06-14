@@ -1,4 +1,5 @@
 # Jimmy's Ice Scream Store
+Clone deze repository. ALs je klaar bent stuur een link van jouw repository naar ons toe.
 Los zoveel mogelijk taken op. Neem niet meer dan een uur de tijd. Niet alles hoeft af en volgorde maakt niet uit.
 
 ## Menu
